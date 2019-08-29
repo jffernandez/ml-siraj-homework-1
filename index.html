@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <!-- Load the latest version of TensorFlow.js -->
+  <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+</head>
+
+<body>
+  <div style="float: left;">
+    <h1 style="font-size: 1.3em; margin-bottom: 0;">Image Classification with Tensorflow.js</h1>
+    <div style="float: right;"><small><em>By Jose F. Fernández</em></small></div>
+    <div id="console"><br /></div>
+
+    <div style="display: flex; justify-content: center;">
+      <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <button id="class-0">Add No action</button>
+      <button id="class-a">Add A</button>
+      <button id="class-b">Add B</button>
+      <button id="class-c">Add C</button>
+    </div>
+  </div>
+  <!-- Load main.js after the content of the page -->
+  <script src="main.js"></script>
+</body>
+
+</html>
